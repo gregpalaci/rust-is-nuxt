@@ -2,19 +2,35 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "nuxi build",
+    "dev": "nuxi dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "cypress:run": "cypress run --config video=false --component"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@tauri-apps/cli": "^1.4.0",
-    "nuxt": "^3.7.0"
+    "@types/node": "^20.6.0",
+    "@vite-pwa/nuxt": "^0.1.1",
+    "cypress": "^13.1.0",
+    "happy-dom": "^10.11.2",
+    "nuxt": "^3.7.0",
+    "nuxt-vitest": "^0.10.4",
+    "vitest": "^0.33.0"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.4.0"
+    "@nuxt/config": "^2.16.3",
+    "@nuxt/kit": "^3.7.1",
+    "@nuxt/modules": "^0.6.0-16f217",
+    "@nuxt/types": "^2.16.3",
+    "@nuxt/typescript-build": "^3.0.1",
+    "@nuxt/vite-builder": "^3.7.1",
+    "@pinia/nuxt": "^0.4.11",
+    "@tauri-apps/api": "^1.4.0",
+    "vconsole": "^3.15.1",
+    "vue-tsc": "^1.8.10"
   }
 }

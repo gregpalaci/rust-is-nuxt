@@ -1,5 +1,13 @@
+<script setup>
+// const { $vconsole  } = useNuxtApp();
+
+</script>
 <template>
   <div>
-    <NuxtWelcome />
+    <VitePwaManifest />
+    <NuxtLoadingIndicator />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

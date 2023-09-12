@@ -11,8 +11,12 @@
     "version": "0.1.0"
   },
   "tauri": {
+    "systemTray": {
+      "iconPath": "icons/32x32.png",
+      "iconAsTemplate": true
+    },
     "allowlist": {
-      "all": false
+      "all": true 
     },
     "bundle": {
       "active": true,
@@ -29,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "tech.huakun.tauri-nuxt-template",
+      "identifier": "tech.huakun.tauri-nuxt-templatex",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -52,15 +56,6 @@
     },
     "updater": {
       "active": false
-    },
-    "windows": [
-      {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
-        "title": "tauri-nuxt-template",
-        "width": 800
-      }
-    ]
+    }
   }
 }
